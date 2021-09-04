@@ -16,7 +16,7 @@ module.exports = {
       [
         {
           nik: '3671548925612354',
-          name: 'Teguh',
+          fullname: 'Teguh',
           role_id: 1,
           password:
             '$2b$10$iW4WoWjHbN1FKS8UN19fsOiMu.Oeu3cANu8N0vqkOzSfWKtdcaENO', // -> password : 12345678
@@ -25,7 +25,7 @@ module.exports = {
         },
         {
           nik: '3671548925612355',
-          name: 'Keva Damar Galih',
+          fullname: 'Keva Damar Galih',
           role_id: 2,
           password: '$2b$10$iW4WoWjHbN1FKS8UN19fsOiMu.Oeu3cANu8N0vqkOzSfWKtdcaENO',// -> password : 12345678
           photo: null,
