@@ -4,13 +4,17 @@ const cors = require('cors');
 const router = require('./src/routes');
 const app = express();
 
+const port = process.env.PORT_ENV || 5000;
 app.use(cors());
 
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
-const PORT = process.env.PORT_ENV || 5000;
 
 app.use('/api/v1', router);
+app.use('/', (req, res) => {
+    res.json({ msg: 'Welcome Kawan' });
+  });
+  
 
-app.listen(PORT, () => console.log(`server running on port : ${PORT}`));
+app.listen(port, () => console.log(`server running on port : ${port}`));
